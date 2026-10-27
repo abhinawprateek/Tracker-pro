@@ -6,6 +6,7 @@ import DsaTab from '../components/DsaTab';
 import ProjectTab from '../components/ProjectTab';
 import AnalyticsTab from '../components/AnalyticsTab';
 import WeeklyReviewTab from '../components/WeeklyReviewTab';
+import PlanTab from '../components/PlanTab';
 
 export default function Home() {
   const [activeTab, setActiveTab] = useState('dashboard');
@@ -20,6 +21,7 @@ export default function Home() {
         {activeTab === 'projects' && <ProjectTab />}
         {activeTab === 'analytics' && <AnalyticsTab />}
         {activeTab === 'review' && <WeeklyReviewTab />}
+        {activeTab === 'plan' && <PlanTab />}
       </main>
     </div>
   );

@@ -1,8 +1,9 @@
-import { LayoutDashboard, Code2, FolderKanban, BarChart3, CalendarDays } from 'lucide-react';
+import { LayoutDashboard, Code2, FolderKanban, BarChart3, CalendarDays, ClipboardList } from 'lucide-react';
 
 export default function Navigation({ activeTab, setActiveTab }: { activeTab: string, setActiveTab: (t: string) => void }) {
   const tabs = [
     { id: 'dashboard', label: 'Dashboard', icon: <LayoutDashboard size={20} /> },
+    { id: 'plan', label: 'Study Plan', icon: <ClipboardList size={20} /> },
     { id: 'dsa', label: 'DSA Tracker', icon: <Code2 size={20} /> },
     { id: 'projects', label: 'Projects', icon: <FolderKanban size={20} /> },
     { id: 'analytics', label: 'Analytics', icon: <BarChart3 size={20} /> },
